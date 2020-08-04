@@ -1,0 +1,137 @@
+.cabecera{
+    background-image: url('../Imagenes/background\ nombre.jpg');
+    background-size: cover;
+    color: white;
+    height: 950px;
+    padding-top: 450px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.parrafo{
+    margin: 0px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.tituloDatos{
+    text-align: center;
+    font-weight: bold; 
+    font-size: 30px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+
+}
+.centrada {
+    text-align: center;
+}
+.contenido {
+    background-image: url('../Imagenes/lenguaje-de-programacion-java-codificacion-papel-pintado-1920x1200-17042_6.jpg');
+    height: 950px;
+    padding-top: 350px;
+    padding-bottom: 400px;
+}
+.aptitudes{
+    background-image: url('../Imagenes/code-programming-typo-1367421-wallhere.com.jpg');
+    height: 800;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    font-family: 'Jost', sans-serif;
+}
+.progress{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: 'Jost', sans-serif;
+}
+.redesSociales{
+    padding-top: 20px;
+    background-color:#212529;
+    padding-bottom: 20px;
+}
+.presentacion{
+    background-image: url('../Imagenes/430831.jpg');
+    padding-top: 350px;
+    padding-bottom: 350px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.parrafoPresentacion{
+    margin: 0px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+}
+.linkedin{
+    width: 50px; 
+    height: 50px;
+}
+/*codigo boton ir arriba*/
+
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top:48%;
+    left: 50%;
+    transition: .2s;
+    transform: translate(-50%,-50%) scale(0);
+    color: #fff;
+    transition: .2s;  
+}
+.show{
+    z-index: 10;   
+}
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%,-50%) scale(1);
+}
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+/*codigo boton contacto*/
+.btnContacto{
+    position: fixed;
+    bottom: 9rem;
+    left: 6rem;
+}
+.formulario{
+    background-color: gray;
+    padding:10px;
+    width: 200px;
+    display: none;
+    position: fixed;
+    bottom: 50px;right: 10px;
+}
