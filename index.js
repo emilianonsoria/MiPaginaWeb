@@ -45,14 +45,15 @@ infoPersonal.once('value', function (snapshot) {
 });
 
 
-var expLaboral = database.ref('expLaboral/t1/');
+var expLaboral = database.ref('expLaboral/');
 
 expLaboral.once('value', function (snapshot) {
-    var exp = snapshot.val()
+    var exp1 = snapshot.val()
 
     cadena = ""
-    for (var i in exp)
-        cadena += "<ul>"
+    for (var i in exp1){
+    var exp = exp1[i]
+        cadena += "<li>"
     cadena += exp.nombre + " - " + exp.puesto
     cadena += "<br>"
     cadena += exp.desde + " - " + exp.hasta
@@ -60,8 +61,8 @@ expLaboral.once('value', function (snapshot) {
     cadena += exp.tareas
     cadena += "<br>"
     cadena += exp.referencias
-    cadena += "</ul>"
-
+    cadena += "</li>"
+    }
     $(".expLaboral").html(cadena)
 
 });
